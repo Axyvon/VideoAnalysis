@@ -91,7 +91,7 @@ body:
       description: Copy any error messages, stack traces, or console output
       render: shell
       placeholder: |
-        Exception in thread "main" java.lang. NullPointerException
+        Exception in thread "main" java.lang.NullPointerException
         at com.axyvon.videoanalysis... 
     validations:
       required: false
