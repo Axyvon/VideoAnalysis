@@ -15,7 +15,7 @@ body:
   - type: dropdown
     id: question-category
     attributes:
-      label:  Question Category
+      label: Question Category
       description: What is your question about?
       options: 
         - Installation & Setup
@@ -32,7 +32,7 @@ body:
         - Troubleshooting
         - General
     validations:
-      required:  true
+      required: true
 
   - type: textarea
     id: question
@@ -43,10 +43,10 @@ body:
     validations:
       required: true
 
-  - type:  textarea
+  - type: textarea
     id: context
     attributes:
-      label:  Context
+      label: Context
       description: Provide additional context about what you're trying to accomplish
       placeholder: I'm trying to... because...
     validations:
@@ -56,7 +56,7 @@ body:
     id: attempted-solutions
     attributes:
       label: What Have You Tried?
-      description:  Describe any solutions or approaches you've already attempted
+      description: Describe any solutions or approaches you've already attempted
       placeholder: |
         I tried: 
         1. ... 
@@ -67,16 +67,16 @@ body:
   - type: input
     id: version
     attributes:
-      label:  Application Version
+      label: Application Version
       description: What version are you using?
       placeholder: "0.1-ALPHA"
     validations:
-      required:  false
+      required: false
 
   - type: textarea
     id: screenshots
     attributes:
-      label:  Screenshots (optional)
+      label: Screenshots (optional)
       description: Add screenshots if they would help explain your question
     validations:
       required: false
@@ -84,7 +84,7 @@ body:
   - type: checkboxes
     id: acknowledgments
     attributes:
-      label:  Acknowledgments
+      label: Acknowledgments
       options: 
         - label: I have searched existing issues and documentation for an answer
           required: true

@@ -1,5 +1,5 @@
 name: 🔒 Security Issue
-description:  Report a security vulnerability (CONFIDENTIAL)
+description: Report a security vulnerability (CONFIDENTIAL)
 title: "[SECURITY]: "
 labels: ["security"]
 assignees: []
@@ -23,7 +23,7 @@ body:
   - type: dropdown
     id: severity
     attributes:
-      label:  Severity Level
+      label: Severity Level
       description: How severe is this security concern?
       options:
         - Critical - Immediate action required (email us directly instead!)
@@ -37,7 +37,7 @@ body:
   - type: dropdown
     id: category
     attributes:
-      label:  Security Category
+      label: Security Category
       description: What type of security concern is this?
       options: 
         - Authentication/Authorization
@@ -56,7 +56,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label:  Description
+      label: Description
       description: Describe the security concern (avoid specific exploit details for critical issues)
       placeholder: |
         I noticed that... 
@@ -67,7 +67,7 @@ body:
   - type: dropdown
     id: affected-component
     attributes:
-      label:  Affected Component
+      label: Affected Component
       description: Which part of the application is affected?
       options:
         - License Management System
@@ -87,7 +87,7 @@ body:
   - type: textarea
     id: impact
     attributes:
-      label:  Potential Impact
+      label: Potential Impact
       description: What could happen if this security issue is exploited?
       placeholder: |
         - Potential for... 
@@ -98,7 +98,7 @@ body:
   - type: input
     id: version
     attributes:
-      label:  Affected Version(s)
+      label: Affected Version(s)
       description: Which version(s) are affected?
       placeholder: "0.1-ALPHA"
     validations:
@@ -107,7 +107,7 @@ body:
   - type: textarea
     id: reproduction
     attributes:
-      label:  Steps to Reproduce (General)
+      label: Steps to Reproduce (General)
       description: |
         General steps only - DO NOT include specific exploit code or detailed attack vectors.
         Save those for private communication.
@@ -122,14 +122,14 @@ body:
     attributes:
       label: Suggested Mitigation
       description: Do you have suggestions for how to address this security concern?
-      placeholder:  This could be mitigated by...
+      placeholder: This could be mitigated by...
     validations:
       required: false
 
   - type: textarea
-    id:  references
+    id: references
     attributes:
-      label:  References
+      label: References
       description: Links to relevant security advisories, CVEs, or documentation
       placeholder: |
         - CVE-XXXX-XXXX
@@ -153,7 +153,7 @@ body:
 
   - type: markdown
     attributes:
-      value:  |
+      value: |
         ---
         **Thank you for helping keep Axyvon Video Analysis Client secure!**
         
