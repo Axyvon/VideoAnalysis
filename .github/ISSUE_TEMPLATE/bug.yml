@@ -1,5 +1,5 @@
 name: 🐛 Bug Report
-description:  Report a bug or unexpected behavior
+description: Report a bug or unexpected behavior
 title: "[BUG]: "
 labels: ["bug"]
 assignees: []
@@ -13,7 +13,7 @@ body:
   - type: dropdown
     id: bug-area
     attributes:
-      label:  Bug Area
+      label: Bug Area
       description: Which area of the application is affected?
       options:
         - Video Playback
@@ -57,14 +57,14 @@ body:
     id: steps-to-reproduce
     attributes: 
       label: Steps to Reproduce
-      description:  Detailed steps to reproduce the bug
+      description: Detailed steps to reproduce the bug
       placeholder: |
         1. Open the application
         2. Load a video file
         3. Click on '...'
         4. See error
     validations:
-      required:  true
+      required: true
 
   - type: textarea
     id: expected-behavior
@@ -99,7 +99,7 @@ body:
   - type: input
     id: version
     attributes:
-      label:  Application Version
+      label: Application Version
       description: What version of the application are you using?
       placeholder: "0.1-ALPHA"
     validations:
@@ -108,14 +108,14 @@ body:
   - type: input
     id: os-version
     attributes:
-      label:  Operating System
+      label: Operating System
       description: What OS and version are you using?
       placeholder: "Windows 11 Pro 23H2"
     validations:
       required: true
 
   - type: input
-    id:  java-version
+    id: java-version
     attributes: 
       label: Java Version
       description: What Java version is installed?  (if known)
@@ -126,7 +126,7 @@ body:
   - type: textarea
     id: video-info
     attributes:
-      label:  Video File Information (if applicable)
+      label: Video File Information (if applicable)
       description: If the bug involves video playback, provide details about the video file
       placeholder: |
         - Format: MP4
@@ -148,17 +148,17 @@ body:
   - type: textarea
     id: screenshots
     attributes:
-      label:  Screenshots
+      label: Screenshots
       description: Add screenshots to help explain the problem
-      placeholder:  Drag and drop images here
+      placeholder: Drag and drop images here
     validations:
-      required:  false
+      required: false
 
   - type: dropdown
     id: reproducibility
     attributes:
       label: Reproducibility
-      description:  How often does this bug occur?
+      description: How often does this bug occur?
       options:
         - Always - Every time
         - Often - Most of the time
@@ -170,12 +170,12 @@ body:
   - type: textarea
     id: additional-context
     attributes:
-      label:  Additional Context
+      label: Additional Context
       description: Any other information that might help us resolve this bug
     validations:
       required: false
 
-  - type:  checkboxes
+  - type: checkboxes
     id: acknowledgments
     attributes:
       label: Acknowledgments

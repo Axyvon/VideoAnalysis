@@ -1,5 +1,5 @@
 name: ✨ Enhancement Request
-description:  Suggest an improvement to an existing feature
+description: Suggest an improvement to an existing feature
 title: "[ENHANCEMENT]: "
 labels: ["enhancement", "request"]
 assignees: []
@@ -32,8 +32,8 @@ body:
   - type: textarea
     id: current-behavior
     attributes:
-      label:  Current Behavior
-      description:  Describe how the feature currently works
+      label: Current Behavior
+      description: Describe how the feature currently works
       placeholder: Currently, when I...
     validations:
       required: true
@@ -41,16 +41,16 @@ body:
   - type: textarea
     id: proposed-enhancement
     attributes:
-      label:  Proposed Enhancement
-      description:  Describe the improvement you'd like to see
+      label: Proposed Enhancement
+      description: Describe the improvement you'd like to see
       placeholder: I would like it to...
     validations:
       required: true
 
-  - type:  textarea
+  - type: textarea
     id: benefits
     attributes:
-      label:  Benefits
+      label: Benefits
       description: What benefits would this enhancement provide?
       placeholder: |
         - Faster workflow
@@ -60,7 +60,7 @@ body:
     validations:
       required: true
 
-  - type:  dropdown
+  - type: dropdown
     id: impact
     attributes:
       label: Impact
@@ -75,17 +75,17 @@ body:
   - type: textarea
     id: mockups
     attributes:
-      label:  Mockups or Examples
+      label: Mockups or Examples
       description: Provide screenshots, mockups, or examples of the enhancement
-      placeholder:  Attach images or provide links
+      placeholder: Attach images or provide links
     validations:
-      required:  false
+      required: false
 
   - type: textarea
     id: additional-context
     attributes:
       label: Additional Context
-      description:  Any other information about the enhancement
+      description: Any other information about the enhancement
     validations:
       required: false
 

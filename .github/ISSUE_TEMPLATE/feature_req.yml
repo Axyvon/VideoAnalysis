@@ -1,19 +1,19 @@
 name: 🚀 Feature Request
-description:  Suggest a new feature for Axyvon Video Analysis Client
-title: "[FEATURE]:  "
+description: Suggest a new feature for Axyvon Video Analysis Client
+title: "[FEATURE]: "
 labels: ["feature", "request"]
 assignees: []
 
 body: 
   - type: markdown
     attributes:
-      value:  |
+      value: |
         Thanks for taking the time to suggest a new feature!  Please fill out the information below. 
 
   - type: dropdown
     id: feature-area
     attributes:
-      label:  Feature Area
+      label: Feature Area
       description: Which area of the application does this feature relate to?
       options:
         - Video Playback & Controls
@@ -27,7 +27,7 @@ body:
         - Reports & Analytics
         - Other
     validations:
-      required:  true
+      required: true
 
   - type: textarea
     id: description
@@ -42,7 +42,7 @@ body:
     id: use-case
     attributes:
       label: Use Case
-      description:  Describe the scenario where this feature would be useful
+      description: Describe the scenario where this feature would be useful
       placeholder: As a coach, I want to...  so that I can...
     validations:
       required: true
@@ -59,7 +59,7 @@ body:
   - type: dropdown
     id: priority
     attributes:
-      label:  Priority
+      label: Priority
       description: How important is this feature to you?
       options:
         - Low - Nice to have
@@ -71,7 +71,7 @@ body:
   - type: textarea
     id: additional-context
     attributes:
-      label:  Additional Context
+      label: Additional Context
       description: Add any other context, screenshots, or mockups about the feature request
       placeholder: |
         - Screenshots/mockups
@@ -83,9 +83,9 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label:  Acknowledgments
+      label: Acknowledgments
       options:
         - label: I have searched existing issues to ensure this feature hasn't been requested before
           required: true
-        - label:  I understand this is a proprietary application and feature implementation is at the discretion of Axyvon
+        - label: I understand this is a proprietary application and feature implementation is at the discretion of Axyvon
           required: true

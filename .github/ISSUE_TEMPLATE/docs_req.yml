@@ -1,5 +1,5 @@
 name: 📚 Documentation Request
-description:  Request new or improved documentation
+description: Request new or improved documentation
 title: "[DOCS]: "
 labels: ["documentation", "request"]
 assignees: []
@@ -13,7 +13,7 @@ body:
   - type: dropdown
     id: doc-type
     attributes:
-      label:  Documentation Type
+      label: Documentation Type
       description: What type of documentation is needed?
       options:
         - User Guide
@@ -32,7 +32,7 @@ body:
   - type: dropdown
     id: doc-area
     attributes:
-      label:  Documentation Area
+      label: Documentation Area
       description: Which feature or area needs documentation?
       options: 
         - Getting Started
@@ -54,7 +54,7 @@ body:
   - type: dropdown
     id: request-type
     attributes:
-      label:  Request Type
+      label: Request Type
       description: What kind of documentation request is this?
       options: 
         - New Documentation - Topic not covered
@@ -68,7 +68,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label:  Description
+      label: Description
       description: Describe what documentation is needed or how existing documentation can be improved
       placeholder: I need documentation that explains how to...
     validations:
@@ -77,16 +77,16 @@ body:
   - type: textarea
     id: current-issue
     attributes:
-      label:  Current Issue (if applicable)
+      label: Current Issue (if applicable)
       description: If improving existing documentation, what's unclear or missing?
       placeholder: The current documentation says...  but it doesn't explain...
     validations:
       required: false
 
   - type: textarea
-    id:  suggested-content
+    id: suggested-content
     attributes:
-      label:  Suggested Content
+      label: Suggested Content
       description: If you have suggestions for what the documentation should include
       placeholder: |
         The documentation should cover: 
@@ -98,7 +98,7 @@ body:
   - type: dropdown
     id: audience
     attributes:
-      label:  Target Audience
+      label: Target Audience
       description: Who would benefit from this documentation?
       options: 
         - Beginners - New users
@@ -117,7 +117,7 @@ body:
     validations:
       required: false
 
-  - type:  checkboxes
+  - type: checkboxes
     id: acknowledgments
     attributes:
       label: Acknowledgments
