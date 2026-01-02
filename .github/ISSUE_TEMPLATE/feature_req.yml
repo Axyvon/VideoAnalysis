@@ -29,21 +29,6 @@ body:
     validations:
       required:  true
 
-  - type: dropdown
-    id: sport-specific
-    attributes:
-      label:  Sport Specific
-      description: Is this feature specific to a particular sport?
-      options:
-        - Common (All Sports)
-        - Field Hockey
-        - Soccer
-        - Basketball
-        - Other Sport
-        - Not Applicable
-    validations:
-      required: true
-
   - type: textarea
     id: description
     attributes:
