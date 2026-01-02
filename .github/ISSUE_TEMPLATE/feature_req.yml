@@ -1,7 +1,7 @@
 name: 🚀 Feature Request
 description:  Suggest a new feature for Axyvon Video Analysis Client
 title: "[FEATURE]:  "
-labels: ["enhancement", "to-implement"]
+labels: ["feature", "request"]
 assignees: []
 
 body: 
