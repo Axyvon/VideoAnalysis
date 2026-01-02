@@ -13,12 +13,12 @@ body:
         **DO NOT** disclose security vulnerabilities publicly in this issue tracker.
         
         If you've discovered a critical security vulnerability, please: 
-        1. **Email us directly** at (security@axyvon.com)[mailto://security@axyvon.com] (or appropriate security contact)
+        1. **Email us directly** at [security@axyvon.com](mailto://security@axyvon.com) (or appropriate security contact)
         2. **DO NOT** include specific exploit details in this public issue
         3. Use this form only for **non-critical** security concerns
         
         For **critical vulnerabilities** (authentication bypass, data exposure, remote code execution, etc.), 
-        please contact us privately first at .
+        please contact us privately first at [security@axyvon.com](mailto://security@axyvon.com).
 
   - type: dropdown
     id: severity
