@@ -1,0 +1,100 @@
+name: ✨ Enhancement Request
+description: Suggest an improvement to an existing feature
+title: "[ENHANCEMENT]: "
+labels: ["enhancement", "request"]
+assignees: []
+
+body: 
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an enhancement! Please provide details about the existing feature and how it can be improved.
+
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Feature Area
+      description: Which existing feature needs enhancement?
+      options:
+        - Video Playback & Controls
+        - Event Tracking (Goals, PC, PS, Fouls)
+        - Game Time Management
+        - Data Management (Save/Load/Export)
+        - User Interface
+        - Configuration & Settings
+        - Remote Control/WebSocket
+        - License Management
+        - Performance
+        - Other
+    validations: 
+      required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: Describe how the feature currently works
+      placeholder: Currently, when I...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-enhancement
+    attributes:
+      label: Proposed Enhancement
+      description: Describe the improvement you'd like to see
+      placeholder: I would like it to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits
+      description: What benefits would this enhancement provide?
+      placeholder: |
+        - Faster workflow
+        - Better user experience
+        - Improved accuracy
+        - etc.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How much would this enhancement improve your workflow?
+      options:
+        - Minimal - Small improvement
+        - Moderate - Noticeable improvement
+        - Significant - Major improvement
+    validations: 
+      required: true
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups or Examples
+      description: Provide screenshots, mockups, or examples of the enhancement
+      placeholder: Attach images or provide links
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information about the enhancement
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgments
+    attributes:
+      label: Acknowledgments
+      options: 
+        - label: I have checked that this enhancement hasn't been suggested before
+          required: true
+        - label: I have tested the current feature to understand its limitations
+          required: true

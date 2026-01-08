@@ -1,0 +1,160 @@
+name: 🔒 Security Issue
+description: Report a security vulnerability (CONFIDENTIAL)
+title: "[SECURITY]: "
+labels: ["security"]
+assignees: []
+
+body: 
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ IMPORTANT - Security Disclosure Policy
+        
+        **DO NOT** disclose security vulnerabilities publicly in this issue tracker.
+        
+        If you've discovered a critical security vulnerability, please: 
+        1. **Email us directly** at [security@axyvon.com](mailto:security@axyvon.com) (or appropriate security contact)
+        2. **DO NOT** include specific exploit details in this public issue
+        3. Use this form only for **non-critical** security concerns
+        
+        For **critical vulnerabilities** (authentication bypass, data exposure, remote code execution, etc.), 
+        please contact us privately first at [security@axyvon.com](mailto:security@axyvon.com).
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      description: How severe is this security concern?
+      options:
+        - Critical - Immediate action required (email us directly instead!)
+        - High - Significant security risk
+        - Medium - Moderate security concern
+        - Low - Minor security improvement
+        - Informational - Security best practice suggestion
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Security Category
+      description: What type of security concern is this?
+      options: 
+        - Authentication/Authorization
+        - Data Privacy/Exposure
+        - License Validation
+        - Remote Control/API Security
+        - WebSocket Security
+        - File System Access
+        - Network Communication
+        - Dependency Vulnerability
+        - Configuration Security
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the security concern (avoid specific exploit details for critical issues)
+      placeholder: |
+        I noticed that... 
+        This could potentially allow... 
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected-component
+    attributes:
+      label: Affected Component
+      description: Which part of the application is affected?
+      options:
+        - License Management System
+        - Remote HTTPS Server
+        - WebSocket Connection
+        - Data Storage/Files
+        - Configuration System
+        - Video Processing
+        - Event Tracking
+        - Export Functionality
+        - User Interface
+        - Multiple Components
+        - Other
+    validations: 
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Potential Impact
+      description: What could happen if this security issue is exploited?
+      placeholder: |
+        - Potential for... 
+        - Could lead to...
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Affected Version(s)
+      description: Which version(s) are affected?
+      placeholder: "0.1-ALPHA"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce (General)
+      description: |
+        General steps only - DO NOT include specific exploit code or detailed attack vectors.
+        Save those for private communication.
+      placeholder: |
+        1. Navigate to... 
+        2. Observe that...
+    validations:
+      required: false
+
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Suggested Mitigation
+      description: Do you have suggestions for how to address this security concern?
+      placeholder: This could be mitigated by...
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links to relevant security advisories, CVEs, or documentation
+      placeholder: |
+        - CVE-XXXX-XXXX
+        - https://...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: responsible-disclosure
+    attributes:
+      label: Responsible Disclosure Agreement
+      options:
+        - label: I understand this is a public issue tracker
+          required: true
+        - label: I have NOT included specific exploit code or detailed attack vectors
+          required: true
+        - label: I understand that critical vulnerabilities should be reported privately via email
+          required: true
+        - label: I will not publicly disclose this issue until Axyvon has had time to address it
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Thank you for helping keep Axyvon Video Analysis Client secure!**
+        
+        We take security seriously and will respond to all reports promptly.

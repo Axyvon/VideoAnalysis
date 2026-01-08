@@ -1,0 +1,92 @@
+name: ❓ Question
+description: Ask a question about using the application
+title: "[QUESTION]: "
+labels: ["question"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes: 
+      value: |
+        Have a question about using Axyvon Video Analysis Client? We're here to help! 
+        
+        **Note:** For urgent issues or license-related questions, please contact support at [contact@axyvon.com](mailto:contact@axyvon.com)
+
+  - type: dropdown
+    id: question-category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options: 
+        - Installation & Setup
+        - Video Playback
+        - Event Tracking
+        - Game Time Management
+        - Data Management
+        - Export/Import
+        - Settings & Configuration
+        - License & Activation
+        - Remote Control/API
+        - Best Practices
+        - Feature Usage
+        - Troubleshooting
+        - General
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: Ask your question clearly and provide context
+      placeholder: How do I... ?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide additional context about what you're trying to accomplish
+      placeholder: I'm trying to... because...
+    validations:
+      required: false
+
+  - type: textarea
+    id: attempted-solutions
+    attributes:
+      label: What Have You Tried?
+      description: Describe any solutions or approaches you've already attempted
+      placeholder: |
+        I tried: 
+        1. ... 
+        2. ...
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: Application Version
+      description: What version are you using?
+      placeholder: "0.1-ALPHA"
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional)
+      description: Add screenshots if they would help explain your question
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgments
+    attributes:
+      label: Acknowledgments
+      options: 
+        - label: I have searched existing issues and documentation for an answer
+          required: true
+        - label: This is not a bug report (use the Bug Report template for bugs)
+          required: true

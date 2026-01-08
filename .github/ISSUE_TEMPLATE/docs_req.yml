@@ -1,0 +1,128 @@
+name: 📚 Documentation Request
+description: Request new or improved documentation
+title: "[DOCS]: "
+labels: ["documentation", "request"]
+assignees: []
+
+body: 
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve our documentation! Please describe what documentation is needed or could be improved.
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Documentation Type
+      description: What type of documentation is needed?
+      options:
+        - User Guide
+        - Installation Instructions
+        - Feature Documentation
+        - API Documentation
+        - Configuration Guide
+        - Troubleshooting
+        - FAQ
+        - Video Tutorial
+        - Quick Start Guide
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: doc-area
+    attributes:
+      label: Documentation Area
+      description: Which feature or area needs documentation?
+      options: 
+        - Getting Started
+        - Video Playback
+        - Event Tracking
+        - Game Time Management
+        - Data Management
+        - Export/Import
+        - Settings & Configuration
+        - License Management
+        - Remote Control/API
+        - Keyboard Shortcuts
+        - Best Practices
+        - Troubleshooting
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Request Type
+      description: What kind of documentation request is this?
+      options: 
+        - New Documentation - Topic not covered
+        - Improvement - Existing documentation unclear
+        - Update - Documentation is outdated
+        - Example - Need more examples
+        - Correction - Documentation is incorrect
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what documentation is needed or how existing documentation can be improved
+      placeholder: I need documentation that explains how to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-issue
+    attributes:
+      label: Current Issue (if applicable)
+      description: If improving existing documentation, what's unclear or missing?
+      placeholder: The current documentation says...  but it doesn't explain...
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggested-content
+    attributes:
+      label: Suggested Content
+      description: If you have suggestions for what the documentation should include
+      placeholder: |
+        The documentation should cover: 
+        - Step 1... 
+        - Step 2... 
+    validations:
+      required: false
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Target Audience
+      description: Who would benefit from this documentation?
+      options: 
+        - Beginners - New users
+        - Intermediate - Regular users
+        - Advanced - Power users
+        - Developers - Technical integration
+        - All Users
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that would help create better documentation
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgments
+    attributes:
+      label: Acknowledgments
+      options: 
+        - label: I have checked existing documentation to confirm this isn't already covered
+          required: true
+        - label: I have provided specific details about what's needed
+          required: true
